@@ -1,0 +1,41 @@
+body{
+    background-color: midnightblue ;
+    color: aliceblue;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+}
+
+.reponse{
+    align-content: center;
+    display: flex;
+}
+
+#global{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#identite{
+    display: flex;
+    justify-content: center;
+}
+
+.blockIden{
+    margin: auto;
+}
+
+#naissance{
+    display: flex;
+}
+
+fieldset{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nivHTML{
+    margin-top: 10px;
+}

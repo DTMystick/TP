@@ -1,0 +1,35 @@
+.button {
+    font-family: sans-serif;
+    border: none;
+    padding: 10px 10px 10px 52px;
+    background-color: #fe0;
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+
+    &:hover {
+        background-color: lighten(#fe0, 20%);
+    }
+    &::before{
+        content: " ";
+        background-image: url(./sprite.png);
+        position: absolute;
+        width: 31px;
+        height: 30px;
+        display: block;
+        top: 0px;
+        left: 5px;
+    }
+}
+
+$compteur: 1;
+@while $compteur <= 5{
+    a:nth-child(#{$compteur})::before{
+        background-position-x: ($compteur - 1) * -32px;
+    }
+    $compteur: $compteur + 1;
+}
+
+    // On laisse de la place à gauche  // Pour pouvoir placer l'icône en absolute à
+    //l'intérieur  // C'est plus sympa, //non ? } }

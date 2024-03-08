@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="server.php">
+        <h1>Mon premier formulaire HTML5</h1>
+        <fieldset id="global">
+            <legend>Vos données personnelles</legend>
+            <div id="identite">
+                <div class="blocIden">
+                    <label for="Nom" id="Nom">Nom</label>
+                    <input type="text" class="reponse"><br>
+                </div>
+                <div class="blockIden">
+                    <label for="Prénom" id="Prenom">Prénom</label>
+                    <input type="text" class="reponse"><br>
+                </div>
+            </div>
+            <label for="Date" id="Date">Date de naissance</label>
+            <input type="date" class="reponse"><br>
+            <fieldset>
+                <legend>Lieu de naissance</legend>
+                <div id="naissance">
+                <input type="radio" name="Choix" class="reponse">
+                <label for="Lieu" id="Lieu">Seine et Marne</label>
+                <input type="radio" name="Choix" class="reponse">
+                <label for="Autre" id="Autre">Autre</label>
+            </div>
+            </fieldset>
+            <label for="Adresse" id="Adresse1">Adresse postale</label>
+            <textarea name="Adresse" id="Adresse" cols="30" rows="2" class="reponse"></textarea><br>
+            <label for="Code" id="Code">Code postal</label>
+            <input type="number" class="reponse"><br>
+            <label for="Mail" id="Mail">Adresse électronique</label>
+            <input type="email" class="reponse"><br>
+            <label for="Page" id="Page">Page personnelle</label>
+            <input type="url" class="reponse"><br>
+            <label for="Tel" id="Tel">Téléphone portable</label>
+            <input type="text" class="reponse"><br>
+            <label for="Semestre" id="SemestreL">Semestre</label>
+            <select name="Semestre" id="SemestreS">
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                <option value="S4">S4</option>
+            </select><br>
+            <div id="nivHTML">
+                <label for="Niveau" id="Niveau">Niveau en HTML</label>
+            <input type="range" min="0" max="10" step="1" class="reponse"><br>
+        </div>
+            <fieldset>
+                <legend>Connaissances</legend>
+                <input type="checkbox">
+                <label for="HTML" id="HTML">HTML</label>
+                <input type="checkbox">
+                <label for="CSS" id="CSS">CSS</label>
+                <input type="checkbox">
+                <label for="Form" id="Form">formulaires</label>
+                <input type="checkbox">
+                <label for="JS" id="JS">JavaScript</label>
+            </fieldset><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

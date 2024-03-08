@@ -1,0 +1,23 @@
+/* @media screen and (max-width: 400px){
+    body{
+        background-color: #ff0000;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+    body{
+        background-color: #00FF00;
+    }
+}
+
+@media screen and (min-width: 800px){
+    body{
+        background-color: #0000FF;
+    }
+} */
+
+#sommaire{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset id="form">
+            <h1>Informations personnelles</h1>
+            <fieldset id="civil">
+                <legend>état civil</legend>
+                <label for="Sexe">Civilité</label>
+                <select name="Sexe" id="sexe">
+                    <option value="il">Il</option>
+                    <option value="elle">Elle</option>
+                    <option value="iel">Iel</option>
+                    <option value="aucun">Aucun</option>
+                </select>
+                <label for="nom">Nom</label>
+                <input type="text">
+                <label for="prenom">Prenom</label>
+                <input type="text">
+                <label for="naissance">Date de naissance</label>
+                <input type="date">
+                <label for="lieu">Commune de naissance</label>
+                <input type="text">
+                <select name="listeLieu" id="listeLieu">
+                    <option value="lieuUn">Chez moi</option>
+                    <option value="lieuDeux">Chez toi</option>
+                    <option value="lieuTrois">Lieusaint</option>
+                    <option value="lieuQuatre">Quelque part</option>
+                    <option value="lieuCinq">Seine et marne</option>
+                </select>
+            </fieldset>
+            <fieldset id="coord">
+                <legend>Coordonnées</legend>
+                <div id="texteTel">
+                <label for="telFixe">Téléphone fixe</label>
+                <label for="telPort">Téléphone portable</label>
+                </div>
+                <div id="numeroTel">
+                <input type="tel">
+                <input type="tel">
+            </div>
+                <label for="mail">Courriel</label>
+                <input type="email">
+                <label for="site">Site Web</label>
+                <input type="text">
+            </fieldset>
+            <fieldset>
+                <legend>Compétences</legend>
+                <div class="cocher">
+                    <label for="anglais">Nivea d'anglais : </label>
+                    <label for="choixUn">C1</label>
+                    <input type="radio" name="niveau" class="niveau">
+                    <label for="choixDeux">B1</label>
+                    <input type="radio" name="niveau" class="niveau">
+                    <label for="choixTrois">A1</label>
+                    <input type="radio" name="niveau" class="niveau">
+                </div>
+                <div class="cocher">
+                    <label for="langage">Langage informatiques : </label>
+                    <label for="choixA">HTML</label>
+                    <input type="radio">
+                    <label for="choixB">CSS</label>
+                    <input type="radio">
+                    <label for="choixC">Javascript</label>
+                    <input type="radio">
+                    <label for="choixC">PHP</label>
+                    <input type="radio">
+                </div>
+            </fieldset>
+            <input type="submit" class="fin">
+            <input type="reset" class="fin">
+        </fieldset>
+    </form>
+</body>
+
+</html>

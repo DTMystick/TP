@@ -1,0 +1,27 @@
+#blockSommaire {
+    float: left;
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+li{
+    text-align: center;
+    width: 80%;
+    margin-top: 5px;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    
+}
+
+.blockBody {
+    float: left;
+    width: 80%;
+    border: 2px solid;
+    background-color: #AAAAFF;
+    padding: 10px;
+}

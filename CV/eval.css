@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    background-color: orange;
+}
+
+h2{
+    font-size: 14pt;
+    font-style: italic;
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    color: red;
+}
+
+a:visited{
+    font-weight: bold;
+}
+
+{
+    border: 2px solid red;
+}
+
+table, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    
+}
+
+td{
+    width: 110px;
+    text-align: center;
+}

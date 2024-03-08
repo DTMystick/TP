@@ -1,0 +1,37 @@
+#olUn{
+    list-style:lower-greek;
+    border: 1px solid lightgray;
+    width: 22.5%;
+    padding-bottom: 3%;
+    padding-top: 0.5%;
+}
+
+.bold{
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+ol li ul li ul li{
+    list-style: none;
+    font-style: italic;
+}
+
+ol li::first-letter, .bold{
+text-transform: capitalize;
+}
+
+ol li ol li{
+    list-style: lower-greek;
+}
+
+.terme{
+    list-style: none;
+}
+
+#texteUn{
+    margin-bottom: 1%;
+}
+
+#texteDeux{
+    margin-top: 1%;
+}

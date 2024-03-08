@@ -1,0 +1,55 @@
+body{
+    background-color: steelblue;
+    color: white;
+}
+
+#form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#civil, #coord{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 20%;
+    background-color: lightblue;
+}
+
+select{
+    background-color: lightblue;
+}
+
+#sexe{
+    width: 10%;
+}
+
+#listeLieu{
+    width: 15%;
+}
+
+#numeroTel, #texteTel{
+    display: flex;
+    column-gap: 25%;
+    
+    
+}
+
+
+
+.cocher{
+    display: flex;
+    
+}
+
+.cocher input{
+    width: auto;
+}
+
+.fin{
+    width: 10%;
+}

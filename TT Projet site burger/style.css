@@ -1,0 +1,72 @@
+#entete1{
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 56px;
+    padding: 0px, 20px, 0px, 20px;
+}
+
+ #reseaux{
+    width: 333px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+
+#facebook{
+    width: 25px;
+    height: 25px;
+}
+
+#instagram{
+    width: 17px;
+    height: 17px;
+    top: 4px;
+    left: 4px;
+}
+
+ header a{
+    background-color: #137348;
+    color: #ffffff;
+    border-radius: 3px;
+    width: 208px;
+    height: 19px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+
+ nav{
+    display: flex;
+    width: 1440px;
+    height: 108px;
+    background-color: #212529;
+    top: 57px;
+    border-top: 4px solid #FFC107;
+    border-bottom: 4px solid #FFC107;
+    justify-content: space-between;
+    padding: 20px, 70px, 20px, 70px;
+ }
+
+ #navMenu{
+   display: flex;
+    width: 370px;
+    height: 43px;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+
+ #boutonShiny{
+    border-radius: 2px;
+    border-top: 6px solid #FFC107;
+    border-bottom: 5px solid #FFC107;
+    padding: 12px, 17px, 12px, 17px;
+    width: 91px;
+    height: 43px;
+    text-align: center;
+ }
