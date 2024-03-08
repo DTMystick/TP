@@ -6,4 +6,4 @@ sous = nb1 - nb2
 mult = nb1 * nb2
 divi = nb1 / nb2
 
-alert("Addition : " + add + " ; Soustraction : " + sous + " ; Multiplication : " + mult + )
+alert("Addition : " + add + " ; Soustraction : " + sous + " ; Multiplication : " + mult + " ; Division : " + divi)
