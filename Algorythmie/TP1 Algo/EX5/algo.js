@@ -1,9 +1,25 @@
 let nb1 =parseInt (prompt("Valeur 1"))
+let oper = prompt("Quelle operation ?")
 let nb2 =parseInt (prompt("Valeur 2"))
 
-add = nb1 + nb2
-sous = nb1 - nb2
-mult = nb1 * nb2
-divi = nb1 / nb2
+if (oper == "+"){
+    prompt(" Resultat : " + (nb1 + nb2))
+} else {
+    if (oper == "-"){
+        prompt(" Resultat : " + (nb1 - nb2))
+    } else {
+        if (oper == "*"){
+            prompt(" Resultat : " + (nb1 * nb2))
+        } else {
+            if (oper == "/"){
+                prompt(" Resultat : " + (nb1 / nb2))
+            } else {
+                prompt("Pas de bon operateur...")
+            }    
+        }  
+    }  
+}
 
-alert("Addition : " + add + " ; Soustraction : " + sous + " ; Multiplication : " + mult + " ; Division : " + divi)
+
+
+
