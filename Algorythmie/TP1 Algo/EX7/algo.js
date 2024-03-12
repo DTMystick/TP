@@ -8,10 +8,9 @@ let bass = 20
 let haut = 0
 let cpt = 0//Pour mettre fin à la boucle
 
-while (cpt != nbnote){
+while (cpt < nbnote){
     note = parseInt(prompt("Entre une note"))
     total = total + note//On aditionne les notes pour faire la moyenne après
-    moye = total / (cpt + 1) //Calcul de la moyenne
     if (note < bass){ //Definir la note la plus basse
         bass = note
     }
@@ -20,5 +19,6 @@ while (cpt != nbnote){
     }
     cpt++
 }
+moye = total / nbnote //Calcul de la moyenne
 
 alert("Plus basse : " + bass + " ; Plus haute : " + haut + " ; Moyenne : " + moye)
