@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get">
+        <fieldset>
+            <label for="genre">Genre</label>
+            <input type="radio" name="sexe" class="sexe">
+            <label for="homme">Homme</label>
+            <input type="radio" name="sexe" class="sexe">
+            <label for="femme">Femme</label>
+            <input type="radio" name="sexe" class="sexe">
+            <label for="nonBinaire">Non binaire</label><br>
+
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom" onblur="verifPrenom()"><br>
+
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" onblur="verifNom()"><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" onblur="verifAge()"><br>
+
+            <label for="tel">Telephone</label>
+            <input type="text" name="phone" id="phone" onblur="verifPhone()"><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" onblur="verifPrenom()"><br>
+
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" class="pseudo" onblur="verifPrenom()"><br>
+
+            <label for="mdp">Mot de passe</label>
+            <input type="text" name="mdp" class="mdp" onblur="verifPrenom()"><br>
+
+            <label for="confMdp">Confirmation</label>
+            <input type="text" name="confMdp" class="confMdp" onblur="verifPrenom()"><br>
+
+            <label for="pays">Pays</label>
+            <input type="text" name="pays" id="pays" onblur="verifPrenom()"><br>
+
+            <input type="button" value="Vider" name="vider" id="vider">
+            <input type="button" value="S'inscrire" name="inscrire" id="inscrire">
+
+        </fieldset>
+    </form>
+
+
+
+    <script src="./form.js"></script>
+</body>
+
+</html>
