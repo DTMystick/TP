@@ -4,21 +4,19 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 
 function App() {
-  const [isLogged, setisLogged] = useState(false)
+  const [isLogged, setIsLogged] = useState(true)
+
+const switcher = () => {
+  isLogged ? setIsLogged(false) : setIsLogged(true);
+}
+
   if (isLogged) {
     return (
-      <div>
-        <h1>Connecte toi</h1>
-        <Login/>  
-
-      </div>
+        <Login onClick={switcher}/>  
     )
   } else {
     return (
-      <div>
-        <h1>Deconnecte toi</h1>
-        <Logout/>
-      </div>
+        <Logout onClick={switcher}/>
     )
   }
 }

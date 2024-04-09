@@ -1,11 +1,12 @@
 import React from "react";
 
 const Login = ({onClick}) => {
-        const incr = () => {
-        setCount(prevCount => true);
-    };
     return (
-        <button onClick={onClick}>Log in</button>
+        <div>
+            <h1>Connecte toi</h1>
+            <button onClick={onClick}>Log in</button>
+
+        </div>
     )
 }
 
