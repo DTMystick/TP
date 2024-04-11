@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import RedText from "./RedText";
 
 const Liste = () => {
     const products = [
@@ -10,33 +11,33 @@ const Liste = () => {
         { category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5" },
         { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" }
     ];
-    useEffect ( () => {
 
-        if (products.stocked == false) {
-
-        }
-
-        return (
-            <>
-                <table className="table table-striped">
-                    <tbody>
-                        {products.map((item, index) => (
-                            <>
-                                <tr key={index}>
-                                <td>{item.name}</td>
-                                    <td>{item.price}</td>
-                                </tr> 
-                            </>
-                        ))}
-                        </tbody>
-                </table>
-            </>
-        )
-
-    }, [products.stocked]);
+//     useEffect(() => {
+// function Redtext(){
+//     (!products.stocked) ? (<td className="bs-danger">{products.name}</td>) : (<td>{products.name}</td>)
+// }        
+//     }, [products.stocked]);
+ 
+    return (
+        <>
+            <table className="table table-striped">
+                <tbody>
+                    {products.map((item, index) => (
+                        <>
+                            <tr key={index}>
+                            <td className={item.stocked}>{item.name}</td>
+                                <td>{item.price}</td>
+                            </tr>
+                        </>
+                    ))}
+                </tbody>
+            </table>
+        </>
+    
+    )
     
 }
 
-{/* <td className="bs-danger">{item.name}</td> */}
+{/* <td className="bs-danger">{item.name}</td> */ }
 
 export default Liste
