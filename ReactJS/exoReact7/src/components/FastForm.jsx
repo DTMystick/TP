@@ -51,26 +51,26 @@ const FastForm = () => {
                     <div className='col-5'>
                         <label htmlFor="adress">Adress</label>
 
-                        <Field name="firstName" placeholder="Number" className="my-2" />
+                        <Field name="Number" type="number" placeholder="Number" className="my-2" />
                         <ErrorMessage name="firstName" />
-                        <Field name="firstName" placeholder="Road" className="my-2" />
+                        <Field name="Road" placeholder="Road" className="my-2" />
                         <ErrorMessage name="firstName" />
-                        <Field name="firstName" placeholder="City" className="my-2" />
+                        <Field name="City" placeholder="City" className="my-2" />
                         <ErrorMessage name="firstName" />
-                        <Field name="firstName" placeholder="Zipcode" className="my-2" />
+                        <Field name="Zipcode" placeholder="Zipcode" className="my-2" />
                         <ErrorMessage name="firstName" />
                     </div>
                 </div> <hr />
                         <label htmlFor="contact">Contact</label><br />
                 <div className='row'>
                     <div className='col-6'>
-                        <Field name="firstName" placeholder="Phone" className="my-1" />
+                        <Field name="Phone" type="tel" placeholder="Phone" className="my-1" />
                         <ErrorMessage name="firstName" />
                     </div>
                    
                     <div className='col-6'>
 
-                        <Field name="firstName" placeholder="Email" className="my-1" />
+                        <Field name="Email" type="email" placeholder="Email" className="my-1" />
                         <ErrorMessage name="firstName" />
                     </div>
                 </div><hr />
