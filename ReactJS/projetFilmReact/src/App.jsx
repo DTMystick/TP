@@ -15,10 +15,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Accueil />} />
-          <Route path="/Details.jsx" element={<Details />} />
-          <Route path="/Details2.jsx" element={<Details2 />} />
-          <Route path="/Details3.jsx" element={<Details3 />} />
-          <Route path="/Favoris.jsx" element={<Favoris />} />
+          <Route path="/details1" element={<Details />} />
+          <Route path="/details2" element={<Details2 />} />
+          <Route path="/details3" element={<Details3 />} />
+          <Route path="/favoris" element={<Favoris />} />
         </Routes>
       </BrowserRouter>
 

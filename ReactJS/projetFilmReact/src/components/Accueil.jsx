@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Rebelle from '../assets/images/Rebelle.jpg'
 import Joker from '../assets/images/Joker.jpg'
 import Tenet from '../assets/images/Tenet.jpg'
+import Tlou from '../assets/images/Tlou.jpg'
 import { Link } from 'react-router-dom'
 
 const Accueil = () => {
@@ -24,38 +25,59 @@ const Accueil = () => {
     {titre:"Rebelle", image:Rebelle},
     {titre:"Joker", image:Joker},
     {titre:"Tenet", image:Tenet},
+    {titre:"The last of us", image:Tlou},
   ]
 
-  function filtreFilm() {
-    let t = document.getElementById("film").value.length;
-    let ch
-    listeFilm.map((item) => {
-      ch = item.titre.substr(0, t);
-      filtre = item.titre.filter(elem => document.getElementById("film").value != ch)
-      
-  })
+  function compareFilm(titre, ch) {
+      let tch = ch.length;
     
-    return(filtre)
+      titre = titre.substr(0, tch);
+   
+      
+      return(titre == ch)
+      
   }
+
+  function searchFilm() {
+     let tch = document.getElementById("film").value;
+    
+    listeFilm.map((item, index) => {
+      let x = "/details" + (index + 1);
+      if (compareFilm(item.titre, tch)){
+        document.getElementById("currentCard").innerHTML += 
+        '<div class="card col-4">' +
+        // '<Link to={x}>' +
+        '<img src=' + item.image + ' class="card-img-top" alt="..." />' + 
+  // '</Link>' +
+'</div>'  
+      }
+    })
+  }
+    
+
 
   return (
     <>
+    <button onClick={searchFilm}>test</button>
     <nav className="navbar bg-body-tertiary">
   <div className="container-fluid">
     <a className="navbar-brand">Ciné Troybouche</a>
     <form className="d-flex" role="search">
-      <input className="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" id='film' onChange={filtreFilm}/>
+      <input className="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" id='film' onChange={searchFilm}/>
       <Link to="./Favoris.jsx">Favoris</Link>
     </form>
   </div>
 </nav>
 
 <div className='row'>
-{listeFilm.map((item) => (
+  <div onLoad={searchFilm} id='currentCard'>
+    
+  </div>
+{/* {listeFilm.map((item) => (
 <div className="card col-4">
   <img src={item.image} className="card-img-top" alt="..." onClick={toDetails}/>
 </div>
-))}
+))} */}
 </div>
 {/* <div className='row'> */}
 
