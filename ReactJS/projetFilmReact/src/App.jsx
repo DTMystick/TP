@@ -8,7 +8,7 @@ import Details3 from './components/Details3'
 import Favoris from './components/Favoris'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>

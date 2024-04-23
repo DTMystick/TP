@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom'
 
 
 const Details = () => {
-  const navigate = useNavigate();
 
-  const toAccueil = () => {
-    navigate("/")
-  }
 
   return (
     <>
+      <nav className="navbar bg-secondary fixed-top">
+        <div className="container-fluid">
+          <Link to="/" className="navbar-brand bg-light btn">Ciné Troybouche</Link>
+          <Link to="./favoris" className='btn bg-light'>Favoris</Link>
+        </div>
+      </nav>
+
       <div className='row'>
         <div className="card col-4">
           <img src={Rebelle} class="card-img-top" alt="..." />
@@ -32,17 +35,17 @@ const Details = () => {
 
           <div className='text-start'>Resumé : Lorem ipsum</div>
           <div className='row'>
-          <div className='col-2 text-start'>Synopsis :</div>
-          <div className='col-10 text-start'>Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Aliquam eius minima similique, doloribus soluta architecto
-        expedita sapiente iure quia molestias tempora, quas ullam unde, saepe
-        fugit cumque? Odit assumenda minus, error quibusdam nesciunt ex
-        reiciendis! Non, maiores? Odio, nemo omnis!</div>
-        </div>
+            <div className='col-2 text-start'>Synopsis :</div>
+            <div className='col-10 text-start'>Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Aliquam eius minima similique, doloribus soluta architecto
+              expedita sapiente iure quia molestias tempora, quas ullam unde, saepe
+              fugit cumque? Odit assumenda minus, error quibusdam nesciunt ex
+              reiciendis! Non, maiores? Odio, nemo omnis!</div>
+          </div>
         </div>
       </div>
       <Link to="/">
-      <button className="btn btn-outline-success" type="submit">Retour</button>
+        <button className="btn btn-outline-success" type="submit">Retour</button>
       </Link>
     </>
   )
